@@ -151,9 +151,10 @@ def evaluate_classification(model, X_test, y_test, cmap='Greens',
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
-# logreg = LogisticRegression()
-# logreg_pipe = make_pipeline(preprocessor, logreg)
-# logreg_pipe.fit(X_train, y_train)
+
+logreg = LogisticRegression()
+logreg_pipe = make_pipeline(preprocessor, logreg)
+logreg_pipe.fit(X_train, y_train)
 
 print(f'Training Score:', logreg_pipe.score(X_train, y_train))
 print(f' Testing Score:', logreg_pipe.score(X_test, y_test))
@@ -212,9 +213,9 @@ pca95 = PCA(n_components=.95)
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
-# logreg_l2 = LogisticRegression(C=c, max_iter=1000, solver='liblinear', penalty='l2')
-# logreg_l2_pipe = make_pipeline(preprocessor, logreg)
-# logreg_l2_pipe.fit(X_train, y_train)
+logreg_l2 = LogisticRegression(C=c, max_iter=1000, solver='liblinear', penalty='l2')
+logreg_l2_pipe = make_pipeline(preprocessor, logreg)
+logreg_l2_pipe.fit(X_train, y_train)
 
 logregPreds = logreg_l2_pipe.predict(X_test)
 logregPredsAcc = logreg_l2_pipe.score(X_test, y_test)
@@ -224,9 +225,9 @@ print(logregPredsAcc)
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
-# logreg_l2 = LogisticRegression(C=c, max_iter=1000, solver='liblinear', penalty='l2')
-# logreg_l2_pipe_pca = make_pipeline(preprocessor,pca95, logreg)
-# logreg_l2_pipe_pca.fit(X_train, y_train)
+logreg_l2 = LogisticRegression(C=c, max_iter=1000, solver='liblinear', penalty='l2')
+logreg_l2_pipe_pca = make_pipeline(preprocessor,pca95, logreg)
+logreg_l2_pipe_pca.fit(X_train, y_train)
 
 pcalogregPreds = logreg_l2_pipe_pca.predict(X_test)
 pcalogregPredsAcc = logreg_l2_pipe_pca.score(X_test, y_test)
