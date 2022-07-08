@@ -302,8 +302,8 @@ cluster_df = df.copy()
 cluster_df['cluster'] = best_model.labels_
 cluster_df
 
-cluster_groups = cluster_df.groupby('bmi', as_index=False)
+cluster_groups = cluster_df.groupby('cluster', as_index=False)
 cluster_mean = cluster_groups.mean()
 print(cluster_mean)
 
-cluster_mean.plot(subplots=True, kind='bar', figsize= (40, 40), sharex=False)
+cluster_mean.plot(subplots=True, kind='bar', figsize= (80, 80), sharex=False)
