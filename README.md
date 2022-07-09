@@ -1,6 +1,6 @@
-**Dataset**
+**Stroke Prediction Analysis**
 
-The dataset can be found in the [repository](https://github.com/dee-ah-nuh/stroke) or can be downloaded from [Kaggle](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset)
+The dataset used can be found in the [repository](https://github.com/dee-ah-nuh/stroke) or can be downloaded from [Kaggle](https://www.kaggle.com/fedesoriano/stroke-prediction-dataset)
 
 The dataset contains 5110 real world observations and 10 different features:
 
@@ -36,6 +36,7 @@ All these models respond to a variable (dependent variable) that has categorical
 - Bagging Classifier
 
   **&**
+
 - Decision Tree Classifier 
 
 1. Input: The dataset
@@ -101,34 +102,48 @@ All these models respond to a variable (dependent variable) that has categorical
 6. Predicting the classifier output against the test data
 7. Comparing the predicted results with the test results to get the accuracy
 
+
 **KMeans Clustering**
+
+
+- In this graph we can see the centroids and the various clusteres mapped upon age, bmi and average glucose level. We can see in the Elbow and the Intertia plot that the highest and optimal number of cluster to groups the people in tihs dataset was 3 as represented inn the scatterplot above.
+
+
+![Figure 2022-07-07 203619 (22)](https://user-images.githubusercontent.com/96541076/178084360-01487939-ff6a-4e06-901b-08abcdc89bcf.png)
+
 
 
 
 **Key Findings**
 
-- In this graph we can see the centroids and the various clusteres mapped upon age, bmi and average glucose level. We can see in the Elbow and the Intertia plot that the highest and optimal number of cluster to groups the people in tihs dataset was 3 as represented inn the scatterplot above.
-
-![Figure 2022-07-07 203619 (22)](https://user-images.githubusercontent.com/96541076/178084360-01487939-ff6a-4e06-901b-08abcdc89bcf.png)
-
-
 - This pie chart outlines the overall Stroke distribution based on the KMeans Clusters found above
+
 
 ![Figure 2022-07-07 203619 (5)](https://user-images.githubusercontent.com/96541076/178084784-2cb1fbd8-3797-43ff-be63-b637c224c9c6.png)
  
  
- - 
-![Distribution of Float Variables](https://user-images.githubusercontent.com/96541076/178085196-0452dd3d-37d4-44df-8b3c-d339b0b5bb45.png)
+ - This is a Facet Grid that outlines the density of having a stroke based the overall distribution and correlation of having a stroke as we age.
 
 
-- 
-![difference between variables](https://user-images.githubusercontent.com/96541076/178085348-ce2a3f26-0bd5-494e-8add-4074c4b6dea2.png)
+![Facet Grid](https://user-images.githubusercontent.com/96541076/178116082-c081d3ed-3675-4345-868c-b9100fdc9d04.png)
 
 
-- 
+- This is the distribution of Ages separated into bins/groups and further separated into outcomes of those who have had a stroke versus those who did not. 
+
+
+
 ![count plot for age_groups](https://user-images.githubusercontent.com/96541076/178085528-5d3a1257-baeb-4aa9-8810-02b3aaee7323.png)
+
+- Distribution of BMI and Average Glucose Levels for all the people within the dataset.
+
+
+
+![Distribution Count of BMI and Glucose](https://user-images.githubusercontent.com/96541076/178116088-64dc675a-c9ad-494f-867e-8c43c37e7d17.png)
+![bistribution of bmi](https://user-images.githubusercontent.com/96541076/178116327-4c5bcd39-9c9e-4621-81a3-6b466d8d9bd4.png)
+
 
 **Developer**
 
-
 -  Diana Valladares [github.com/dee-ah-nuh](https://github.com/dee-ah-nuh)
+
+
