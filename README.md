@@ -19,8 +19,8 @@ The dataset contains 5110 real world observations and 10 different features:
 **Features**
 
 1. We employ an algorithm within the sytem that uses **data pre-processing** to handle object-type characters as well as null values.
-2. The system uses a **70-30** training-testing split.
-3. The system uses **Logistic Regression**, **Decision Trees** & **Bagging Classifier**
+2. The system uses a **standard** training-testing split.
+3. The system uses **Logistic Regression**, **Decision Trees** , **Bagging Classifier** , **Decision Tree Classifier** , **XGBClassifier** , **LGBM Classifier** , **GradientBoostingClassifier**
 
 All these models respond to a variable (dependent variable) that has categorical values such as True/False or 0/1. It actually measures the probability of a binary response as the value of response variable based on the mathematical equation relating it with the predictor variables.
    
@@ -33,11 +33,19 @@ All these models respond to a variable (dependent variable) that has categorical
 **Models**
 
 - Logistic Regression
+
 - Bagging Classifier
+
+- Decision Tree Classifier 
+
+- XGBClassifier
+
+- LGBM Classifier
+
 
   **&**
 
-- Decision Tree Classifier 
+- GradientBoostingClassifier
 
 1. Input: The dataset
 2. Output: Classification into 0 (no stroke) or 1 (stroke)
